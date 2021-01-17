@@ -1,0 +1,55 @@
+2021-01-17 14:39:36.366  INFO 16016 --- [main] c.i.o.OrderServiceApplication            : No active profile set, falling back to default profiles: default
+2021-01-17 14:39:37.459  INFO 16016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-01-17 14:39:37.577  INFO 16016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100ms. Found 1 repository interfaces.
+2021-01-17 14:39:37.777  WARN 16016 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-01-17 14:39:37.948  INFO 16016 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=28c665ea-6a2e-3186-9cfe-6d511692321a
+2021-01-17 14:39:38.130  INFO 16016 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-17 14:39:38.424  INFO 16016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-01-17 14:39:38.433  INFO 16016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-17 14:39:38.433  INFO 16016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2021-01-17 14:39:38.621  INFO 16016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-17 14:39:38.622  INFO 16016 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2223 ms
+2021-01-17 14:39:38.739  WARN 16016 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-01-17 14:39:38.739  INFO 16016 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-01-17 14:39:38.831  INFO 16016 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@34585ac9
+2021-01-17 14:39:42.300  INFO 16016 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-17 14:39:42.395  INFO 16016 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2021-01-17 14:39:42.586  INFO 16016 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-17 14:39:42.686  INFO 16016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-17 14:39:42.764  INFO 16016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-17 14:39:42.779  INFO 16016 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-01-17 14:39:43.605  INFO 16016 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-17 14:39:43.613  INFO 16016 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-17 14:39:43.881  WARN 16016 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-01-17 14:39:43.881  INFO 16016 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-01-17 14:39:44.051  INFO 16016 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-17 14:39:46.138  WARN 16016 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-01-17 14:39:46.187  INFO 16016 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-01-17 14:39:46.292  INFO 16016 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-01-17 14:39:46.424  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-01-17 14:39:47.905  INFO 16016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-01-17 14:39:47.906  INFO 16016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-01-17 14:39:48.106  INFO 16016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-01-17 14:39:48.106  INFO 16016 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-01-17 14:39:48.334  INFO 16016 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-01-17 14:39:49.472  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-01-17 14:39:49.472  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-01-17 14:39:49.472  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-01-17 14:39:49.473  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-01-17 14:39:49.473  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-01-17 14:39:49.473  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-01-17 14:39:49.473  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-01-17 14:39:49.746  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-01-17 14:39:49.748  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-01-17 14:39:49.751  INFO 16016 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-01-17 14:39:49.755  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1610883589754 with initial instances count: 0
+2021-01-17 14:39:49.757  INFO 16016 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2021-01-17 14:39:49.758  INFO 16016 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1610883589758, current=UP, previous=STARTING]
+2021-01-17 14:39:49.760  INFO 16016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:order-service:8090: registering service...
+2021-01-17 14:39:49.841  INFO 16016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-01-17 14:39:49.843  INFO 16016 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8090
+2021-01-17 14:39:49.881  INFO 16016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/host.docker.internal:order-service:8090 - registration status: 204
+2021-01-17 14:39:52.687  INFO 16016 --- [main] c.i.o.OrderServiceApplication            : Started OrderServiceApplication in 23.411 seconds (JVM running for 26.472)
+2021-01-17 14:39:55.134  INFO 16016 --- [RMI TCP Connection(3)-169.254.182.112] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-17 14:39:55.135  INFO 16016 --- [RMI TCP Connection(3)-169.254.182.112] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-17 14:39:55.150  INFO 16016 --- [RMI TCP Connection(3)-169.254.182.112] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms

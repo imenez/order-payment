@@ -1,0 +1,31 @@
+spring:
+  zipkin:
+    base-url: http://localhost:9411/
+  application:
+    name: zipkin
+  main:
+    allow-bean-definition-overriding: true
+
+
+server:
+  port: 9191
+
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    registryFetchIntervalSeconds: 5
+    instance:
+      hostname: ${EUREKA_SERVER_HOST:localhost}
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka/}
+
+logging:
+  level:
+    org:
+      springframework:
+        web: debug
+
+
+

@@ -1,0 +1,15 @@
+server:
+  port: 8094
+
+spring:
+  application:
+    name: hystrix-dashboard
+
+
+eureka:
+  client:
+    instance:
+      hostname: ${EUREKA_SERVER_HOST:localhost}
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka/}
+
